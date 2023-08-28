@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node sum.js",
-    "dev": "nodemon sum.js"
+    "test": "jest",
+    "start": "node sum_unit_testing.js",
+    "dev": "nodemon sum.js",
+    "test:watch": "jest --watch"   
   },
   "repository": {
     "type": "git",
+    
     "url": "git+https://github.com/MariySemenenko/Test_Code_First.git"
   },
   "keywords": [],
@@ -22,7 +24,12 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
+    "jest": "^29.6.4",
     "mongoose": "^7.4.5",
     "nodemon": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.4"
   }
 }
+ 
